@@ -26,6 +26,18 @@ namespace CVWebsite
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/TemplateJs").Include(
+                        "~/Scripts/jquery-3.2.1.min.js",
+                        "~/Scripts/main.js",
+                        "~/Scripts/modernizr.js",
+                        "~/Scripts/pace.min.js",
+                        "~/Scripts/plugins.js"));
+
+            bundles.Add(new StyleBundle("~/Content/TemplateCss").Include(
+                      "~/Content/base.css",
+                      "~/Content/vendor.css",
+                      "~/Content/main.css"));            
         }
     }
 }
