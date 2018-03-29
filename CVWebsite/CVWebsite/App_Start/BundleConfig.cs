@@ -27,12 +27,14 @@ namespace CVWebsite
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/TemplateJs").Include(
-                        "~/Scripts/jquery-3.2.1.min.js",
-                        "~/Scripts/main.js",
+            bundles.Add(new ScriptBundle("~/bundles/HeaderJs").Include(
                         "~/Scripts/modernizr.js",
-                        "~/Scripts/pace.min.js",
-                        "~/Scripts/plugins.js"));
+                        "~/Scripts/pace.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/FooterJs").Include(                      
+                        "~/Scripts/jquery-3.2.1.min.js",
+                        "~/Scripts/plugins.js",
+                        "~/Scripts/main.js"));
 
             bundles.Add(new StyleBundle("~/Content/TemplateCss").Include(
                       "~/Content/base.css",

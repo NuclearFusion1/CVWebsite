@@ -170,6 +170,7 @@
     <Content Include="images\blog\blog-bg-02.jpg" />
     <Content Include="images\contact-bg.jpg" />
     <Content Include="images\count-bg.jpg" />
+    <Content Include="images\space.png" />
     <Content Include="images\hero-bg.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\photoswipe\default-skin.png" />
