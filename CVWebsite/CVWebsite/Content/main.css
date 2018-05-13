@@ -98,7 +98,7 @@ body {
  * ------------------------------------------------------------------- */
 
 a {
-    color: #862121;
+    color: #00147a;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -377,7 +377,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #862121;
+    background: #004080 ;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -386,7 +386,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #862121;
+    color: #004080;
 }
 
 dd {
@@ -517,7 +517,7 @@ form,
 }
 
 .pace .pace-progress {
-    background: #862121;
+    background: #004080 ;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -562,7 +562,7 @@ form,
     margin-left: -30px;
     margin-top: -30px;
     padding: 0;
-    background-color: #862121;
+    background-color: #004080 ;
     border-radius: 100%;
     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
     animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -830,8 +830,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus, 
 input[type="reset"].btn--primary:focus, 
 input[type="button"].btn--primary:focus {
-    background: #862121;
-    border-color: #862121;
+    background: #004080 ;
+    border-color: #004080 ;
 }
 
 
@@ -860,8 +860,8 @@ input[type="button"].btn--primary:focus {
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
-    border: 0.3rem solid #862121;
-    color: #862121;
+    border: 0.3rem solid #004080 ;
+    color: #004080 ;
 }
 
 .btn--pill, button.btn--pill {
@@ -1087,7 +1087,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-    color: #862121;
+    color: #004080 ;
 }
 
 .stats-tabs li a em {
@@ -1109,10 +1109,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .skill-bars li {
-    height: .6rem;
+    height: .3rem;
     background: #c9c9c9;
     width: 100%;
-    margin-bottom: 6.9rem;
+    margin-bottom: 4rem;
     padding: 0;
     position: relative;
 }
@@ -1276,7 +1276,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     .section-intro h3 {
         font-family: "montserrat-semibold", sans-serif;
         font-size: 2rem;
-        color: #0000cc;
+        color: #004080;
         text-transform: uppercase;
         letter-spacing: .15rem;
         margin-top: 0;
@@ -1380,11 +1380,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .blog-list .blog-date {
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.5rem;
-    color: #862121;
+    color: #004080 ;
 }
 
 .blog-list .blog-date a {
-    color: #862121;
+    color: #004080 ;
 }
 
 .blog-list .blog-date a:hover, 
@@ -1409,7 +1409,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .blog-list .blog-cat a:hover, 
 .blog-list .blog-cat a:focus, 
 .blog-list .blog-cat a:active {
-    color: #862121;
+    color: #004080 ;
 }
 
 .blog-list .blog-cat a::after {
@@ -1639,6 +1639,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: 50px;
 }
 
+.header-nav-title {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 25px;
+    letter-spacing: .25rem;
+    position: absolute;
+    top: 4px;
+    left: 50px;
+}
+
+.header-nav strong {
+    font-family: "montserrat-extrabold", sans-serif;
+    color: #004080;
+}
+
 .header-nav {
     display: inline-block;
     list-style: none;
@@ -1660,7 +1674,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     .header-nav li.current a {
         font-family: "montserrat-extrabold", sans-serif;
-        color: #0000cc;
+        color: #004080;
     }
 
 
@@ -1788,8 +1802,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     .home-content h3 {
         font-family: "montserrat-bold", sans-serif;
-        font-size: 1.8rem;
-        color: #0000cc;
+        font-size: 3rem;
+        color: #004080;
         text-transform: uppercase;
         letter-spacing: .5rem;
         position: relative;
@@ -1803,17 +1817,37 @@ button::-moz-focus-inner, input::-moz-focus-inner {
             content: "";
             width: 60px;
             height: 2px;
-            background-color: #0000cc;
+            background-color: #003366;
             margin-top: -1.5px;
             position: absolute;
             left: 0;
             top: 50%;
         }
 
+    .home-content h3:hover {
+        font-family: "montserrat-bold", sans-serif;
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        position: relative;
+        padding-left: 80px;
+        margin-left: -30px;
+        margin-bottom: .6rem;
+    }
+
     .home-content h1 {
         font-family: "montserrat-regular", serif;
         color: #FFFFFF;
         font-size: 6rem;
+        line-height: 1.35;
+        margin-top: 0;
+    }
+
+    .home-content h2 {
+        font-family: "montserrat-regular", serif;
+        color: #FFFFFF;
+        font-size: 3rem;
         line-height: 1.35;
         margin-top: 0;
     }
@@ -1865,27 +1899,27 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding-right: 2rem;
 }
 
-.home-content__scroll a::after {
-    border-bottom: 2px solid #922424;
-    border-right: 2px solid #922424;
-    content: '';
-    display: block;
-    height: 8px;
-    width: 8px;
-    margin-top: -7px;
-    pointer-events: none;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform-origin: 66% 66%;
-    -ms-transform-origin: 66% 66%;
-    transform-origin: 66% 66%;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
-}
+    .home-content__scroll a::after {
+        border-bottom: 2px solid #004080;
+        border-right: 2px solid #004080;
+        content: '';
+        display: block;
+        height: 8px;
+        width: 8px;
+        margin-top: -7px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        -webkit-transform-origin: 66% 66%;
+        -ms-transform-origin: 66% 66%;
+        transform-origin: 66% 66%;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+    }
 
 
 /* ------------------------------------------------------------------- 
@@ -1933,26 +1967,26 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-social i {
-    font-size: 1.8rem;
+    font-size: 3rem;
     right: 0;
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7);
 }
 
-.home-social span {
-    color: #af2b2b;
-    right: 3.6rem;
-    font-size: 1.3rem;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transform-origin: 100% 50%;
-    -ms-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-}
+    .home-social span {
+        color: #004080;
+        right: 5rem;
+        font-size: 2rem;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transform-origin: 100% 50%;
+        -ms-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+    }
 
 .home-social li:hover span {
     opacity: 1;
@@ -2996,7 +3030,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__col--highlight .stats__count::after {
-    background-color: #862121;
+    background-color: #004080 ;
 }
 
 .stats__col--highlight h4 {
@@ -3108,7 +3142,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #862121;
+    background: #004080 ;
 }
 
 .s-contact .form-field label::after {
@@ -3119,7 +3153,7 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #862121;
+    border-right: 5px solid #004080 ;
 }
 
 .contact__main {
@@ -3161,16 +3195,17 @@ html.no-csstransitions .home-content__main {
     border-bottom: 1px solid white;
 }
 
-.contact__form button {
-    margin-top: 4.2rem;
-    background-color: #862121;
-    border-color: #862121;
-}
+    .contact__form button {
+        margin-top: 4.2rem;
+        background-color: #004080;
+        border-color: #004080;
+    }
 
 .message-warning, .message-success {
     display: none;
-    font-size: 1.5rem;
-    line-height: 2;
+    font-size: 1.8rem;
+    line-height: 1.8;
+    font-family: "montserrat-regular", sans-serif;
     padding: 3rem;
     margin-bottom: 3.6rem;
     width: 100%;
@@ -3322,9 +3357,9 @@ footer {
     color: rgba(255, 255, 255, 0.2);
 }
 
-footer a, footer a:visited {
-    color: #862121;
-}
+    footer a, footer a:visited {
+        color: #004080;
+    }
 
 footer a:hover, footer a:focus {
     color: #FFFFFF;
