@@ -19,7 +19,7 @@ namespace CVWebsite.Controllers
             {
                 MailMessage mailMessage = new MailMessage()
                 {
-                    From = new MailAddress(ConfigurationManager.AppSettings["AdminEmail"], contactModel.name),
+                    From = new MailAddress(ConfigurationManager.AppSettings["FromEmail"], contactModel.name),
                     Subject = contactModel.subject,
                     Body = contactModel.message,
                     Sender = new MailAddress(contactModel.email),
