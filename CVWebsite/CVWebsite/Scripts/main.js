@@ -349,17 +349,17 @@
                 $.ajax({
     
                     type: "POST",
-                    url: "inc/sendEmail.php",
+                    url: $(form).attr("action"),
                     data: $(form).serialize(),
                     beforeSend: function() { 
     
                         sLoader.slideDown("slow");
     
                     },
-                    success: function(msg) {
+                    success: function(response) {
     
                         // Message was sent
-                        if (msg == 'OK') {
+                        if (response.Success) {
                             sLoader.slideUp("slow"); 
                             $('.message-warning').fadeOut();
                             $('#contactForm').fadeOut();
@@ -368,7 +368,7 @@
                         // There was an error
                         else {
                             sLoader.slideUp("slow"); 
-                            $('.message-warning').html(msg);
+                            $('.message-warning').html(response.Message);
                             $('.message-warning').slideDown("slow");
                         }
     

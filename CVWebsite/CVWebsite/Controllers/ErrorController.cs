@@ -6,11 +6,16 @@ using System.Web.Mvc;
 
 namespace CVWebsite.Controllers
 {
-    public class HomeController : Controller
+    public class ErrorController : Controller
     {
+        // GET: Error
         public ActionResult Index()
         {
-            ViewBag.Title = "George Feighan";
+            return View();
+        }
+
+        public ActionResult NotFound()
+        {
             return View();
         }
     }

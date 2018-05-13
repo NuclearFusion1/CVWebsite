@@ -1715,13 +1715,27 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
 }
 
-
-
 /* ===================================================================
- * # home - (_site-layout.scss)
- *
+ * # error 
  * ------------------------------------------------------------------- */
 
+.error-code h1 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 18rem;
+    margin-top: 200px;
+}
+
+.error-code h3 {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 4rem;
+    margin: 40px;
+}
+
+/* ===================================================================
+ * # home 
+ * ------------------------------------------------------------------- */
 .s-home {
     width: 100%;
     height: 100%;
@@ -1760,7 +1774,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 /* ------------------------------------------------------------------- 
- * ## home content - (_site-layout.scss) 
+ * ## home content 
  * ------------------------------------------------------------------- */
 
 .home-content {
@@ -3155,7 +3169,6 @@ html.no-csstransitions .home-content__main {
 
 .message-warning, .message-success {
     display: none;
-    background: #0D0A0B;
     font-size: 1.5rem;
     line-height: 2;
     padding: 3rem;

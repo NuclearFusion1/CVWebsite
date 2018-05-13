@@ -1,4 +1,28 @@
-﻿<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/space.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+﻿@model CVWebsite.Models.ContactModel
+
+<!-- header
+    ================================================== -->
+<header class="s-header">
+
+    <div class="header-logo">
+        <a class="site-logo" href="index.html"><img src="images/logo.png" alt="Homepage"></a>
+    </div>
+
+    <nav class="header-nav-wrap">
+        <ul class="header-nav">
+            <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "smoothscroll", href = "#home" })</li>
+            <li>@Html.ActionLink("About", "Index", "Home", null, new { @class = "smoothscroll", href = "#about" })</li>
+            <li>@Html.ActionLink("Contact", "Index", "Home", null, new { @class = "smoothscroll", href = "#contact" })</li>
+        </ul>
+    </nav>
+
+    <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+</header> <!-- end s-header -->
+
+<!-- home
+================================================== -->
+<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/space.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
@@ -12,7 +36,7 @@
             </h1>
             <h3>
                 Software Developer
-            </h3>                                    
+            </h3>
 
             <div class="home-content__buttons">
                 @Html.ActionLink("More About Me", "Index", "Home", null, new { @class = "smoothscroll btn btn--stroke", href = "#about" })
@@ -29,19 +53,7 @@
 
     <ul class="home-social">
         <li>
-            <a href="#"><i class="im im-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-behance" aria-hidden="true"></i><span>Behance</span></a>
-        </li>
-        <li>
-            <a href="#"><i class="im im-pinterest" aria-hidden="true"></i><span>Pinterest</span></a>
+            <a href="https://www.linkedin.com/in/george-feighan/"><i class="im im-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>
         </li>
     </ul>
     <!-- end home-social -->
@@ -55,7 +67,7 @@
         <div class="col-full text-center">
             <h3>About</h3>
             <h1>More About Me</h1>
-            <p class="lead">I am a Physics graduate of the University of Bristol, working as a software developer since 2016. I have .NET and LAMP stack experience from various projects at different clients. </p>
+            <p class="lead">I am a Physics graduate of the University of Bristol, working as a software developer since 2016. I have demonstrated an ability to work flexibly in different sectors using both .NET and LAMP stacks across the full development lifecycle. </p>
         </div>
     </div>
 
@@ -64,56 +76,67 @@
         <div class="col-six tab-full left">
             <h3>Hello</h3>
 
-            <p>Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud mollit laboris sunt magna velit culpa consectetur nostrud consectetur labore sed do.</p>
+            <p>Thank you for taking the time to visit my website. Hopefully this will let you know a bit more about me and the skills I have to offer.</p>
 
             <p>
-                Lorem ipsum Nisi officia Duis irure voluptate dolor commodo pariatur occaecat aliquip adipisicing voluptate Ut in qui ea sint occaecat in commodo in in in incididunt ut sunt in Ut Duis in ut ex qui anim cupidatat cupidatat ex in non dolore labore ea amet cillum ea qui dolor nisi sed velit mollit exercitation ex fugiat labore in deserunt culpa laborum culpa anim dolore laboris amet irure mollit proident velit fugiat aute ea elit magna consequat qui officia quis elit Duis dolor esse cupidatat tempor proident voluptate aliqua ex cupidatat do eiusmod veniam irure laborum ut magna nostrud dolore ullamco commodo elit sit magna aliqua laborum veniam officia dolor.
+                As a physics graduate, I have developed strong analytical skills that have allowed me to approach issues in a logical manner. While at University I particularly enjoyed and excelled at the C programming modules, where I solved computational problems ranging from differential calculus to orbital simulation. From here I realised that software development was the career choice for me.
+            </p>
+
+            <p>
+                Since graduating I have worked as a software developer, where I have quickly taken on new skills to deliver effective solutions for our clients. I have always integrated quickly to the new working environment, collaborating with others at a design level, through to implementation, delivery and troubleshooting. 
+            </p>
+
+            <p>
+                I thrive on finding innovative and elegant solutions to complex problems, working effectively both independently and within a larger team. With my technical ability and excellent communication skills, I have received excellent feedback from clients for the value I provide to their business.
             </p>
         </div>
 
         <div class="col-six tab-full right">
-            <h3>I've Got Some skills.</h3>
+            <h3>Top Technical Skills</h3>
 
             <ul class="skill-bars">
                 <li>
-                    <div class="progress percent90"><span>90%</span></div>
-                    <strong>HTML5</strong>
-                </li>
-                <li>
                     <div class="progress percent85"><span>85%</span></div>
-                    <strong>CSS3</strong>
+                    <strong>C#</strong>
                 </li>
                 <li>
-                    <div class="progress percent70"><span>70%</span></div>
-                    <strong>JQuery</strong>
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>SQL</strong>
                 </li>
                 <li>
-                    <div class="progress percent95"><span>95%</span></div>
-                    <strong>PHP</strong>
+                    <div class="progress percent65"><span>65%</span></div>
+
+                    <strong>Python</strong>
                 </li>
                 <li>
                     <div class="progress percent75"><span>75%</span></div>
-                    <strong>Wordpress</strong>
+                    <strong>PHP</strong>
                 </li>
                 <li>
-                    <div class="progress percent90"><span>90%</span></div>
-                    <strong>Angular JS</strong>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>HTML</strong>
+                </li>
+                <li>
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>CSS</strong>
+                </li>
+                <li>
+                    <div class="progress percent75"><span>75%</span></div>
+                    <strong>JavaScript</strong>
+                </li>
+                <li>
+                    <div class="progress percent65"><span>65%</span></div>
+                    <strong>Bash</strong>
                 </li>
             </ul>
-        </div>
+            <div class="row about-content about-content--buttons">
+                <div class="tab-full align-center">
+                    <a href="~/download/George Feighan CV.pdf" class="btn btn--primary full-width">View My CV</a>
+                </div>
+            </div>
 
-    </div> <!-- end about-content -->
+        </div> <!-- end about-content -->
 
-    <div class="row about-content about-content--buttons">
-
-        <div class="col-six tab-full left">
-            <a href="#0" class="btn btn--primary full-width">Download My CV</a>
-        </div>
-        <div class="col-six tab-full right">
-            <a href="#0" class="btn full-width">Hire Me Now</a>
-        </div>
-
-    </div> <!-- end about-content buttons -->
 
     <div class="row about-content about-content--timeline">
 
@@ -127,27 +150,20 @@
                 <div class="timeline__block">
                     <div class="timeline__bullet"></div>
                     <div class="timeline__header">
-                        <p class="timeline__timeframe">July 2015 - Present</p>
-                        <h3>Awesome Studio</h3>
-                        <h5>Lead Designer</h5>
+                        <p class="timeline__timeframe">August 2016 - Present</p>
+                        <h3>Dorset Software</h3>
+                        <h5>Software Developer</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                        <p>
+                            I spent 7 months working for a large pharmaceutical company on a major database migration project. I worked on a number of software products, collaborating with others to refactor much of the codebase to improve performance and usability. Here I used .NET framework technologies including C#, ASP.NET, MSSQL as well as Git in an agile development environment.
+                        </p>
+
+                        <p>
+                            Currently I am contracted to a major bank as a full stack web developer, working on a core banking support tool used by colleagues globally. I have helped drive productivity within the wider team by developing new features, in addition to maintaining the system through BAU activities. I work across the full development lifecycle, transforming requirements into effective functionality across all layers of the software. My role also includes code reviews and testing, design analysis and also documentation writing as part of a knowledge transfer project currently underway. Here I quickly picked up LAMP stack skills to integrate into the team.
+                        </p>
                     </div>
                 </div> <!-- end timeline__block -->
-
-                <div class="timeline__block">
-                    <div class="timeline__bullet"></div>
-                    <div class="timeline__header">
-                        <p class="timeline__timeframe">July 2014 - June 2015</p>
-                        <h3>Super Cool Agency</h3>
-                        <h5>Front-end Developer</h5>
-                    </div>
-                    <div class="timeline__desc">
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                    </div>
-                </div> <!-- end timeline__block -->
-
             </div> <!-- end timeline -->
         </div> <!-- end left -->
 
@@ -157,24 +173,24 @@
                 <div class="timeline__block">
                     <div class="timeline__bullet"></div>
                     <div class="timeline__header">
-                        <p class="timeline__timeframe">July 2012 - June 2014</p>
-                        <h3>Great Design Studio</h3>
-                        <h5>Web Designer</h5>
+                        <p class="timeline__timeframe">June 2015 - August 2015</p>
+                        <h3>Oxfam</h3>
+                        <h5>Online Sales Volunteer</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+                        <p>While at Oxfam I was able to apply my technical skills by improving the speed and reliability of their online sales dispatching process. I successfully managed and organised the inventory database, documenting the process to ensure others could take over.</p>
                     </div>
                 </div> <!-- end timeline__block -->
 
                 <div class="timeline__block">
                     <div class="timeline__bullet"></div>
                     <div class="timeline__header">
-                        <p class="timeline__timeframe">July 2011 - June 2012</p>
-                        <h3>Epic Design Agency</h3>
-                        <h5>Web Designer</h5>
+                        <p class="timeline__timeframe">Jan 2015 - March 2015</p>
+                        <h3>Action Tutoring</h3>
+                        <h5>Maths GCSE Tutor</h5>
                     </div>
                     <div class="timeline__desc">
-                        <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
+                        <p>Within this role I prepared and delivered one to one tutoring to Maths GCSE students. Through effective communication and patience, I successfully improved the aptitude and confidence of those I helped.</p>
                     </div>
                 </div> <!-- end timeline__block -->
 
@@ -186,481 +202,7 @@
 </section> <!-- end about -->
 <!-- works
 ================================================== -->
-<section id="works" class="s-works target-section">
 
-    <div class="row narrow section-intro has-bottom-sep">
-        <div class="col-full">
-            <h3>Portfolio</h3>
-            <h1>See My Latest Projects.</h1>
-
-            <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
-        </div>
-    </div>
-
-    <div class="row masonry-wrap">
-        <div class="masonry">
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-beetle.jpg" class="thumb-link" title="The Beetle Car" data-size="1050x700">
-                            <img src="images/portfolio/beetle.jpg"
-                                 srcset="images/portfolio/beetle.jpg 1x, images/portfolio/beetle@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            The Beetle
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Development
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-lighthouse.jpg" class="thumb-link" title="Lighthouse" data-size="1050x700">
-                            <img src="images/portfolio/lighthouse.jpg"
-                                 srcset="images/portfolio/lighthouse.jpg 1x, images/portfolio/lighthouse@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Lighthouse
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Design
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <div class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </div>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-salad.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="images/portfolio/salad.jpg"
-                                 srcset="images/portfolio/salad.jpg 1x, images/portfolio/salad@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Salad
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-woodcraft.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="images/portfolio/woodcraft.jpg"
-                                 srcset="images/portfolio/woodcraft.jpg 1x, images/portfolio/woodcraft@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Woodcraft
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-skaterboy.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="images/portfolio/skaterboy.jpg"
-                                 srcset="images/portfolio/skaterboy.jpg 1x, images/portfolio/skaterboy@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Skaterboy
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Development
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-liberty.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="images/portfolio/liberty.jpg"
-                                 srcset="images/portfolio/liberty.jpg 1x, images/portfolio/liberty@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Liberty
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-minimalismo.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="images/portfolio/minimalismo.jpg"
-                                 srcset="images/portfolio/minimalismo.jpg 1x, images/portfolio/minimalismo@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Minimalismo
-                        </h3>
-                        <p class="item-folio__cat">
-                            Web Design
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-            <div class="masonry__brick">
-                <div class="item-folio">
-
-                    <div class="item-folio__thumb">
-                        <a href="images/portfolio/gallery/g-shutterbug.jpg" class="thumb-link" data-size="1050x700">
-                            <img src="images/portfolio/shutterbug.jpg"
-                                 srcset="images/portfolio/shutterbug.jpg 1x, images/portfolio/shutterbug@2x.jpg 2x" alt="">
-                            <span class="shadow-overlay"></span>
-                        </a>
-                    </div>
-
-                    <div class="item-folio__text">
-                        <h3 class="item-folio__title">
-                            Lady Shutterbug
-                        </h3>
-                        <p class="item-folio__cat">
-                            Branding
-                        </p>
-                    </div>
-
-                    <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
-                        <i class="im im-link"></i>
-                    </a>
-
-                    <span class="item-folio__caption">
-                        <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
-                    </span>
-
-                </div> <!-- end item-folio -->
-            </div> <!-- end masonry__brick -->
-
-        </div>
-    </div> <!-- end masonry -->
-
-</section> <!-- end works -->
-<!-- testimonials
-================================================== -->
-<div class="s-testimonials">
-
-    <div class="overlay"></div>
-
-    <div class="row testimonials-header">
-        <div class="col-full">
-            <h1 class="h02">What People Say.</h1>
-        </div>
-    </div>
-
-    <div class="row testimonials">
-
-        <div class="col-full testimonials__slider">
-
-            <div class="testimonials__slide">
-                <img src="images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
-                <p>
-                    Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum.
-                    Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.
-                </p>
-                <div class="testimonials__author h06">
-                    Tim Cook
-                    <span>CEO, Apple</span>
-                </div>
-            </div>
-
-            <div class="testimonials__slide">
-                <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
-                <p>
-                    Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                    Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.
-                </p>
-                <div class="testimonials__author h06">
-                    Sundar Pichai
-                    <span>CEO, Google</span>
-                </div>
-            </div>
-
-            <div class="testimonials__slide">
-                <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
-                <p>
-                    Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                    Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                </p>
-                <div class="testimonials__author h06">
-                    Satya Nadella
-                    <span>CEO, Microsoft</span>
-                </div>
-            </div>
-
-        </div> <!-- end testimonials__slider -->
-
-    </div> <!-- end testimonials -->
-
-</div> <!-- end s-testimonials -->
-<!-- blog
-================================================== -->
-<section id="blog" class="s-blog target-section">
-
-    <div class="row narrow section-intro has-bottom-sep">
-        <div class="col-full">
-            <h3>Journal</h3>
-            <h1>Latest From The Blog.</h1>
-            <p class="lead">
-                Lorem ipsum Dolor adipisicing nostrud et aute.
-                Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum
-                ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.
-            </p>
-        </div>
-    </div>
-
-    <div class="row blog-content">
-        <div class="col-full">
-
-            <div class="blog-list block-1-2 block-tab-full">
-                <article class="col-block">
-
-                    <div class="blog-date">
-                        <a href="blog-single.html">Sept 16, 2017</a>
-                    </div>
-
-                    <h2 class="h01"><a href="blog-single.html">The 10 Golden Rules of Clean Simple Design.</a></h2>
-                    <p>
-                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh..
-                    </p>
-
-                    <div class="blog-cat">
-                        <a href="blog.html">Branding</a><a href="blog.html">Design</a>
-                    </div>
-
-
-                </article>
-                <article class="col-block">
-
-                    <div class="blog-date">
-                        <a href="blog-single.html">Sept 15, 2017</a>
-                    </div>
-
-                    <h2 class="h01"><a href="blog-single.html">Photography Can Improve Your Graphic Design.</a></h2>
-                    <p>
-                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh..
-                    </p>
-
-                    <div class="blog-cat">
-                        <a href="blog.html">Photography</a>
-                    </div>
-
-
-                </article>
-                <article class="col-block">
-
-                    <div class="blog-date">
-                        <a href="blog-single.html">Sept 14, 2017</a>
-                    </div>
-
-                    <h2 class="h01"><a href="blog-single.html">Workspace Design Trends and Ideas.</a></h2>
-                    <p>
-                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh dolore irure esse Duis nulla sint.
-                    </p>
-
-                    <div class="blog-cat">
-                        <a href="blog.html">Branding</a><a href="blog.html">Wordpress</a>
-                    </div>
-                </article>
-                <article class="col-block">
-
-                    <div class="blog-date">
-                        <a href="blog-single.html">Sept 12, 2017</a>
-                    </div>
-                    <h2 class="h01"><a href="blog-single.html">Using Patterns in your Branding.</a></h2>
-                    <p>
-                        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci porta dapibus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum porta. Sed porttitor lectus nibh.
-                    </p>
-
-                    <div class="blog-cat">
-                        <a href="blog.html">Design</a><a href="blog.html">Branding</a>
-                    </div>
-                </article>
-            </div> <!-- end blog-list -->
-
-        </div> <!-- end col-full -->
-    </div> <!-- end blog-content -->
-
-</section> <!-- end s-blog -->
-<!-- s-cta
-================================================== -->
-<section class="s-cta">
-
-    <div class="row narrow cta">
-
-        <div class="col-full cta__content">
-
-            <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
-
-            <p class="lead">
-                Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">DreamHost</a>.
-                Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-            </p>
-
-            <div class="cta__action">
-                <a class="btn btn--primary btn--large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
-            </div>
-
-        </div>
-
-    </div> <!-- end cta -->
-
-</section>
-
-
-<!-- s-stats
-================================================== -->
-<section id="stats" class="s-stats">
-    <div class="row block-1-4 block-tab-1-2 block-mob-full stats">
-
-        <div class="col-block stats__col ">
-            <div class="stats__count">
-                128
-            </div>
-            <h4>Awards Received</h4>
-        </div>
-        <div class="col-block stats__col">
-            <div class="stats__count">
-                1500
-            </div>
-            <h4>Cups of Coffee</h4>
-        </div>
-        <div class="col-block stats__col stats__col--highlight">
-            <div class="stats__upsign">
-                <a href="#"><i class="im im-arrow-up" aria-hidden="true"></i></a>
-            </div>
-            <div class="stats__count">
-                110
-            </div>
-            <h4>Projects Completed</h4>
-        </div>
-        <div class="col-block stats__col">
-            <div class="stats__count">
-                101
-            </div>
-            <h4>Happy Clients</h4>
-        </div>
-
-    </div>
-</section> <!-- end s-stats -->
-<!-- s-stats
-================================================== -->
 <section id="contact" class="s-contact target-section">
 
     <div class="overlay"></div>
@@ -670,26 +212,33 @@
             <h3>Contact</h3>
             <h1>Say Hello.</h1>
 
-            <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+            <p class="lead">Please feel free to contact me below, I will endeavour to respond as soon as possible.</p>
         </div>
     </div>
 
+
     <div class="row contact__main">
-        <div class="col-eight tab-full contact__form">
-            <form name="contactForm" id="contactForm" method="post" action="">
+        <div class="full-width tab-full contact__form">
+            @using (Html.BeginForm("Contact", "Contact", FormMethod.Post, new { @id = "contactForm" }))
+            {
+                @Html.AntiForgeryToken()
                 <fieldset>
 
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        @Html.TextBoxFor(m => m.name, new { @placeholder = @Html.DisplayNameFor(m => m.name), @maxlength = "100", @required = "", @class = "full-width" })
+                        @Html.ValidationMessageFor(m => m.name)
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="" aria-required="true" class="full-width">
+                        @Html.TextBoxFor(m => m.email, new { @type = "email", @placeholder = @Html.DisplayNameFor(m => m.email), @maxlength = "100", @required = "", @class = "full-width" })
+                        @Html.ValidationMessageFor(m => m.email)
                     </div>
                     <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                        @Html.TextBoxFor(m => m.subject, new { @placeholder = @Html.DisplayNameFor(m => m.subject), @maxlength = "200", @class = "full-width" })
+                        @Html.ValidationMessageFor(m => m.subject)
                     </div>
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        @Html.TextAreaFor(m => m.message, new { @placeholder = @Html.DisplayNameFor(m => m.message), @rows = 10, @cols = 50, @maxlength = "2000", @required = "", @class = "full-width" })
+                        @Html.ValidationMessageFor(m => m.message)
                     </div>
                     <div class="form-field">
                         <button class="full-width btn--primary">Submit</button>
@@ -704,7 +253,7 @@
                     </div>
 
                 </fieldset>
-            </form>
+            }
 
             <!-- contact-warning -->
             <div class="message-warning">
@@ -712,37 +261,15 @@
             </div>
 
             <!-- contact-success -->
-            <div class="message-success">
+            <div class="message-success align-center">
                 Your message was sent, thank you!<br>
             </div>
 
-        </div>
-        <div class="col-four tab-full contact__infos">
-            <h4 class="h06">Phone</h4>
-            <p>
-                Phone: (+63) 555 1212<br>
-                Mobile: (+63) 555 0100<br>
-                Fax: (+63) 555 0101
-            </p>
-
-            <h4 class="h06">Email</h4>
-            <p>
-                someone@holawebsite.com<br>
-                info@holawebsite.com
-            </p>
-
-            <h4 class="h06">Address</h4>
-            <p>
-                1600 Amphitheatre Parkway<br>
-                Mountain View, CA<br>
-                94043 US
-            </p>
         </div>
 
     </div>
 
 </section> <!-- end s-contact -->
-
 <!-- photoswipe background
 ================================================== -->
 <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
